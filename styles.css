@@ -667,6 +667,17 @@ ul { list-style: none; }
 .project-info { padding: 22px; }
 .project-info h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; }
 .project-info p  { font-size: 0.88rem; color: var(--text-muted); margin-bottom: 14px; line-height: 1.7; }
+
+/* Single featured project */
+.projects-grid--single {
+  grid-template-columns: 1fr;
+  max-width: 860px;
+  margin: 0 auto;
+}
+.project-card--featured .project-img { height: 420px; }
+.project-card--featured .project-info { padding: 28px 32px; }
+.project-card--featured .project-info h3 { font-size: 1.25rem; line-height: 1.5; }
+.project-card--featured .project-info p  { font-size: 0.95rem; }
 .project-tags { display: flex; flex-wrap: wrap; gap: 6px; }
 .tag {
   font-size: 0.75rem;

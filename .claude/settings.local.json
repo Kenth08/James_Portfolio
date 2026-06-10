@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir \"c:\\\\FRONTEND PROJECTS\\\\James-portfolio\\\\images\" /b /s)",
+      "Bash(git add *)"
+    ]
+  }
+}

@@ -6,18 +6,18 @@ const DATA = {
 
   // --- Personal Info ---
   name: "James Bryan C. Corteza",
-  role: "Information Technology Student",   // shown under name in About
+  role: "Information Systems Student",       // shown under name in About
   email: "james@example.com",               // replace with real email
   phone: "+63 000 000 0000",                // replace with real phone
   location: "Philippines",                   // city / province
 
   // Social links — set to "#" if not applicable
-  github:   "#",
-  linkedin: "#",
-  facebook: "#",
+  linkedin:  "#",
+  facebook:  "https://www.facebook.com/james.cortezaii",
+  instagram: "https://www.instagram.com/james_dafaq/",
 
-  // Resume/CV file path (place the PDF in the project folder)
-  resumeFile: "resume.pdf",
+  // Resume/CV file path
+  resumeFile: "images/certificates/CV-Template-CORTEZA.pdf",
 
   // Hero typing animation words
   typedRoles: [
@@ -34,21 +34,17 @@ const DATA = {
     skills: "8+",
   },
 
-  // About bios (two paragraphs)
-  bio1: "Hello! I am James Bryan C. Corteza — a passionate and driven student with a deep interest in technology and software development. I enjoy solving problems through code and building projects that make a real impact.",
-  bio2: "I continuously sharpen my technical and creative skills to deliver solutions that are efficient, user-friendly, and impactful. As an aspiring IT professional, I aim to contribute my knowledge and creativity in the ever-evolving digital landscape.",
+  // About bios (three paragraphs)
+  bio1: "I am a dedicated and goal-oriented Bachelor of Science in Information Systems student at Davao del Norte State College, with a strong interest in technology, problem-solving, and continuous learning. I am about to graduate, and throughout my academic journey, I have developed skills in system development, documentation, and project management.",
+  bio2: "I have experience working in real-world environments during my on-the-job training, where I handled tasks such as monitoring systems, providing technical support, and assisting in operations. These experiences helped me become adaptable, detail-oriented, and capable of working under pressure.",
+  bio3: "I am passionate about improving my skills in the IT field and eager to contribute to an organization where I can grow professionally while delivering quality results. I am also a team player who values collaboration, responsibility, and efficiency in every task I undertake.",
 
   // --- Skills ---
   // icon: any Font Awesome class (e.g. "fab fa-html5") or use a custom SVG URL in `img`
   skills: [
-    { name: "HTML5",       icon: "fab fa-html5",     color: "#e34f26" },
-    { name: "CSS3",        icon: "fab fa-css3-alt",  color: "#1572b6" },
-    { name: "JavaScript",  icon: "fab fa-js",        color: "#f7df1e" },
-    { name: "React",       icon: "fab fa-react",     color: "#61dafb" },
-    { name: "Python",      icon: "fab fa-python",    color: "#3776ab" },
-    { name: "Java",        icon: "fab fa-java",      color: "#ed8b00" },
-    { name: "Git",         icon: "fab fa-git-alt",   color: "#f05032" },
-    { name: "Figma",       icon: "fab fa-figma",     color: "#f24e1e" },
+    { name: "HTML5",  icon: "fab fa-html5",    color: "#e34f26" },
+    { name: "CSS3",   icon: "fab fa-css3-alt", color: "#1572b6" },
+    { name: "Figma",  icon: "fab fa-figma",    color: "#f24e1e" },
   ],
 
   // --- Education ---
@@ -74,36 +70,11 @@ const DATA = {
   // --- Projects ---
   projects: [
     {
-      title: "Project One",
-      description: "A brief description of what this project does and the technologies used.",
-      tags: ["HTML", "CSS", "JavaScript"],
-      img: "images/project1.jpg",
+      title: "REQUISITION AND APPOINTMENT SYSTEM FOR MUNICIPAL OFFICE OF STO. TOMAS, DAVAO DEL NORTE",
+      description: "A capstone project developed for the Municipal Office of Sto. Tomas, Davao del Norte — a web-based system that streamlines the requisition and appointment processes for local government operations.",
+      tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+      img: "images/Project-capstone.jpg",
       demo: "#",
-      code: "#",
-    },
-    {
-      title: "Project Two",
-      description: "A brief description of what this project does and the technologies used.",
-      tags: ["React", "Node.js"],
-      img: "images/project2.jpg",
-      demo: "#",
-      code: "#",
-    },
-    {
-      title: "Project Three",
-      description: "A brief description of what this project does and the technologies used.",
-      tags: ["Python", "Machine Learning"],
-      img: "images/project3.jpg",
-      demo: "#",
-      code: "#",
-    },
-    {
-      title: "Project Four",
-      description: "A brief description of what this project does and the technologies used.",
-      tags: ["Java", "MySQL"],
-      img: "images/project4.jpg",
-      demo: "#",
-      code: "#",
     },
   ],
 
@@ -156,6 +127,6 @@ const DATA = {
   ],
 
   // Profile & About images
-  profileImg: "images/james photo.jpg",
+  profileImg: "images/james-profile.jpg",
   aboutImg:   "images/james photo.jpg",
 };

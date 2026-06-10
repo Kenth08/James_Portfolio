@@ -17,12 +17,12 @@ function populateData() {
   const d = DATA;
 
   // Social links
-  setHref("link-github",   d.github);
-  setHref("link-linkedin", d.linkedin);
-  setHref("link-facebook", d.facebook);
-  setHref("footer-github",   d.github);
-  setHref("footer-linkedin", d.linkedin);
-  setHref("footer-facebook", d.facebook);
+  setHref("link-linkedin",    d.linkedin);
+  setHref("link-facebook",    d.facebook);
+  setHref("link-instagram",   d.instagram);
+  setHref("footer-linkedin",  d.linkedin);
+  setHref("footer-facebook",  d.facebook);
+  setHref("footer-instagram", d.instagram);
 
   // Resume
   const resumeBtn = document.getElementById("resume-btn");
@@ -38,6 +38,7 @@ function populateData() {
   setText("about-role",     d.role);
   setText("about-bio",      d.bio1);
   setText("about-bio2",     d.bio2);
+  setText("about-bio3",     d.bio3);
   setText("about-email",    d.email);
   setText("about-location", d.location);
   setText("about-phone",    d.phone);
@@ -98,18 +99,20 @@ function populateData() {
 
   // Projects grid
   const projGrid = document.getElementById("projects-grid");
+  const isSingle = d.projects.length === 1;
+  if (isSingle) projGrid.classList.add("projects-grid--single");
   d.projects.forEach((proj, i) => {
     const card = document.createElement("div");
-    card.className = "project-card";
+    card.className = isSingle ? "project-card project-card--featured" : "project-card";
     card.setAttribute("data-aos", "fade-up");
     card.setAttribute("data-aos-delay", `${(i % 2) * 100}`);
     card.innerHTML = `
       <div class="project-img">
         <img src="${proj.img}" alt="${proj.title}" onerror="this.parentElement.classList.add('no-img')" />
+        ${proj.demo && proj.demo !== "#" ? `
         <div class="project-overlay">
           <a href="${proj.demo}" class="proj-btn" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-          <a href="${proj.code}" class="proj-btn" target="_blank"><i class="fab fa-github"></i> Code</a>
-        </div>
+        </div>` : ""}
       </div>
       <div class="project-info">
         <h3>${proj.title}</h3>
