@@ -7,8 +7,8 @@ const DATA = {
   // --- Personal Info ---
   name: "James Bryan C. Corteza",
   role: "Information Systems Student",       // shown under name in About
-  email: "james@example.com",               // replace with real email
-  phone: "+63 000 000 0000",                // replace with real phone
+  email: "jamescorteza2626@gmail.com",
+  phone: "+63 930 630 2341",
   location: "Philippines",                   // city / province
 
   // Social links — set to "#" if not applicable
@@ -42,9 +42,12 @@ const DATA = {
   // --- Skills ---
   // icon: any Font Awesome class (e.g. "fab fa-html5") or use a custom SVG URL in `img`
   skills: [
-    { name: "HTML5",  icon: "fab fa-html5",    color: "#e34f26" },
-    { name: "CSS3",   icon: "fab fa-css3-alt", color: "#1572b6" },
-    { name: "Figma",  icon: "fab fa-figma",    color: "#f24e1e" },
+    { name: "HTML5",               icon: "fab fa-html5",      color: "#e34f26" },
+    { name: "CSS3",                icon: "fab fa-css3-alt",   color: "#1572b6" },
+    { name: "Figma",               icon: "fab fa-figma",      color: "#f24e1e" },
+    { name: "Machine Learning",    icon: "fas fa-brain",      color: "#a855f7" },
+    { name: "Computer Skills",     icon: "fas fa-laptop-code",color: "#22d3ee" },
+    { name: "Communication Skills",icon: "fas fa-comments",   color: "#34d399" },
   ],
 
   // --- Education ---

@@ -54,12 +54,12 @@ function populateData() {
   setText("footer-location", d.location);
 
   // Stats (will be animated later)
-  document.getElementById("stat-projects").dataset.target   = d.stats.projects.replace(/\D/g, "") || "0";
-  document.getElementById("stat-experience").dataset.target = d.stats.experience.replace(/\D/g, "") || "0";
-  document.getElementById("stat-skills").dataset.target     = d.stats.skills.replace(/\D/g, "") || "0";
-  document.getElementById("stat-projects").dataset.suffix   = d.stats.projects.replace(/\d/g, "");
-  document.getElementById("stat-experience").dataset.suffix = d.stats.experience.replace(/\d/g, "");
-  document.getElementById("stat-skills").dataset.suffix     = d.stats.skills.replace(/\d/g, "");
+  const statProj = document.getElementById("stat-projects");
+  const statExp  = document.getElementById("stat-experience");
+  const statSkl  = document.getElementById("stat-skills");
+  if (statProj) { statProj.dataset.target = d.stats.projects.replace(/\D/g, "") || "0"; statProj.dataset.suffix = d.stats.projects.replace(/\d/g, ""); }
+  if (statExp)  { statExp.dataset.target  = d.stats.experience.replace(/\D/g, "") || "0"; statExp.dataset.suffix  = d.stats.experience.replace(/\d/g, ""); }
+  if (statSkl)  { statSkl.dataset.target  = d.stats.skills.replace(/\D/g, "") || "0"; statSkl.dataset.suffix  = d.stats.skills.replace(/\d/g, ""); }
 
   // Skills grid
   const grid = document.getElementById("skills-grid");
@@ -127,27 +127,29 @@ function populateData() {
 
   // Experience timeline
   const expTimeline = document.getElementById("exp-timeline");
-  if (d.experience.length === 0 || (d.experience.length === 1 && d.experience[0].company === "Company / Organization")) {
-    expTimeline.innerHTML = `<p class="no-data">Experience details coming soon.</p>`;
-  } else {
-    d.experience.forEach((exp, i) => {
-      const item = document.createElement("div");
-      item.className = "exp-item";
-      item.setAttribute("data-aos", "fade-up");
-      item.setAttribute("data-aos-delay", `${i * 100}`);
-      item.innerHTML = `
-        <div class="exp-icon"><i class="${exp.icon}"></i></div>
-        <div class="exp-card">
-          <div class="exp-header">
-            <h3>${exp.role}</h3>
-            <span class="exp-period">${exp.period}</span>
+  if (expTimeline) {
+    if (d.experience.length === 0 || (d.experience.length === 1 && d.experience[0].company === "Company / Organization")) {
+      expTimeline.innerHTML = `<p class="no-data">Experience details coming soon.</p>`;
+    } else {
+      d.experience.forEach((exp, i) => {
+        const item = document.createElement("div");
+        item.className = "exp-item";
+        item.setAttribute("data-aos", "fade-up");
+        item.setAttribute("data-aos-delay", `${i * 100}`);
+        item.innerHTML = `
+          <div class="exp-icon"><i class="${exp.icon}"></i></div>
+          <div class="exp-card">
+            <div class="exp-header">
+              <h3>${exp.role}</h3>
+              <span class="exp-period">${exp.period}</span>
+            </div>
+            <p class="exp-company">${exp.company}</p>
+            <p class="exp-desc">${exp.description}</p>
           </div>
-          <p class="exp-company">${exp.company}</p>
-          <p class="exp-desc">${exp.description}</p>
-        </div>
-      `;
-      expTimeline.appendChild(item);
-    });
+        `;
+        expTimeline.appendChild(item);
+      });
+    }
   }
 
   // Certificates grid
