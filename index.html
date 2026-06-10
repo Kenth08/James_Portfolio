@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>James Bryan C. Corteza | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">JBC<span>.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HOME ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-blob blob-1"></div>
+      <div class="hero-blob blob-2"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-text" data-aos="fade-right">
+        <p class="hero-greeting">Hello, World! <span class="wave">👋</span></p>
+        <h1 class="hero-name">I'm <span class="highlight">James Bryan</span><br/>C. Corteza</h1>
+        <div class="hero-role">
+          <span class="role-prefix">I'm a </span>
+          <span class="typed-text" id="typed"></span>
+          <span class="cursor">|</span>
+        </div>
+        <p class="hero-desc">
+          Passionate about building clean, efficient, and user-friendly digital experiences.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+        <div class="hero-socials">
+          <a href="#" class="social-link" aria-label="GitHub" id="link-github"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-link" aria-label="LinkedIn" id="link-linkedin"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-link" aria-label="Facebook" id="link-facebook"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+      <div class="hero-image" data-aos="fade-left">
+        <div class="image-wrapper">
+          <div class="image-glow"></div>
+          <img src="images/profile.jpg" alt="James Bryan C. Corteza" class="profile-img" id="hero-profile-img" />
+          <div class="image-ring"></div>
+        </div>
+        <div class="floating-badge badge-1">
+          <i class="fas fa-code"></i>
+          <span>Developer</span>
+        </div>
+        <div class="floating-badge badge-2">
+          <i class="fas fa-star"></i>
+          <span>Open to Work</span>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Who Am I</span>
+        <h2 class="section-title">About <span class="highlight">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image" data-aos="fade-right">
+          <div class="about-img-wrapper">
+            <img src="images/about.jpg" alt="James Bryan C. Corteza" id="about-img" />
+            <div class="about-img-decoration"></div>
+          </div>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number" id="stat-projects">0+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" id="stat-experience">0+</span>
+              <span class="stat-label">Years Exp.</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" id="stat-skills">0+</span>
+              <span class="stat-label">Skills</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content" data-aos="fade-left">
+          <h3 class="about-subtitle" id="about-role">Information Technology Student</h3>
+          <p class="about-text" id="about-bio">
+            Hello! I am James Bryan C. Corteza — a passionate and driven student with a deep interest in technology and software development. I enjoy solving problems through code and building projects that make a real impact.
+          </p>
+          <p class="about-text" id="about-bio2">
+            I continuously sharpen my technical and creative skills to deliver solutions that are efficient, user-friendly, and impactful. As an aspiring IT professional, I aim to contribute my knowledge and creativity in the ever-evolving digital landscape.
+          </p>
+          <div class="about-info">
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <span class="info-label">Email</span>
+                <span class="info-value" id="about-email">james@example.com</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <span class="info-label">Location</span>
+                <span class="info-value" id="about-location">Philippines</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <span class="info-label">Phone</span>
+                <span class="info-value" id="about-phone">+63 000 000 0000</span>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary" id="resume-btn" download>
+            Download CV <i class="fas fa-download"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">My <span class="highlight">Skills</span></h2>
+      </div>
+      <div class="skills-grid" id="skills-grid">
+        <!-- Skills injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="education section" id="education">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">My <span class="highlight">Education</span></h2>
+        <p class="section-subtitle">"Education is not the learning of facts, but the training of the mind to think."</p>
+      </div>
+      <div class="timeline" id="education-timeline">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+      </div>
+      <div class="projects-grid" id="projects-grid">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">My History</span>
+        <h2 class="section-title">Work <span class="highlight">Experience</span></h2>
+      </div>
+      <div class="exp-timeline" id="exp-timeline">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATES ===== -->
+  <section class="certificates section" id="certificates">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Achievements</span>
+        <h2 class="section-title">My <span class="highlight">Certificates</span></h2>
+      </div>
+      <div class="certs-grid" id="certs-grid">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Let's Talk</span>
+        <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right">
+          <h3>Let's work together</h3>
+          <p>Have a project in mind or just want to say hello? Fill out the form or reach me through any of the channels below.</p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="contact-label">Email</span>
+                <span class="contact-value" id="contact-email">james@example.com</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <span class="contact-label">Phone</span>
+                <span class="contact-value" id="contact-phone">+63 000 000 0000</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <span class="contact-label">Location</span>
+                <span class="contact-value" id="contact-location">Philippines</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form" data-aos="fade-left">
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" id="form-name" placeholder=" " required />
+              <label for="form-name">Full Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="form-email" placeholder=" " required />
+              <label for="form-email">Email Address</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" id="form-subject" placeholder=" " />
+            <label for="form-subject">Subject</label>
+          </div>
+          <div class="form-group">
+            <textarea id="form-message" rows="5" placeholder=" " required></textarea>
+            <label for="form-message">Message</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            Send Message <i class="fas fa-paper-plane"></i>
+          </button>
+          <p class="form-success" id="form-success">Message sent! I'll get back to you soon.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="nav-logo">JBC<span>.</span></span>
+          <p>James Bryan C. Corteza's personal portfolio. Crafted with passion and precision.</p>
+          <div class="footer-socials">
+            <a href="#" id="footer-github" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" id="footer-linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" id="footer-facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Info</h4>
+          <p><i class="fas fa-phone"></i> <span id="footer-phone">+63 000 000 0000</span></p>
+          <p><i class="fas fa-envelope"></i> <span id="footer-email">james@example.com</span></p>
+          <p><i class="fas fa-map-marker-alt"></i> <span id="footer-location">Philippines</span></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 James Bryan C. Corteza. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
